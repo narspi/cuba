@@ -1,0 +1,247 @@
+@media (max-width: 1030px) {
+    .reason__statistics-item {
+        margin: 0 40px 40px 40px;
+    }
+
+    .about__row {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .about__row-info {
+        margin-right: 0;
+        margin-left: 0;
+        order: 1;
+        width: 70%;
+        margin-top: -120px;
+    }
+
+    .about__row:last-child .about__row-info {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about__row-img {
+        width: 100%;
+    }
+
+    .about__row-img img {
+        width: 100%;
+    }
+
+    .car__title {
+        padding-bottom: 20px;
+    }
+
+    .car__dote {
+        width: auto;
+        height: unset;
+        border-radius: 21px;
+        padding: 0 10px;
+        max-width: 160px;
+        background-color: rgba(236, 183, 76, 0.75);
+    }
+
+    .car__dote-1 {
+        top: 4%;
+        right: 20%;
+    }
+
+    .car__dote:hover {
+        background-color: #FFD600;
+    }
+
+    .car__dote::before {
+        display: none;
+    }
+
+    .car__dote:after {
+        display: none;
+    }
+
+    .car__dote-text {
+        position: static;
+        background-color: transparent;
+        pointer-events: none;
+    }
+
+    .car__dote:hover .car__dote-text {
+        color: #000;
+        pointer-events: auto;
+    }
+
+    .footer__item:nth-child(1) {
+        padding-left: initial;
+    }
+}
+
+@media (max-width: 800px) {
+    .reason__statistics-item {
+        margin: 0 0 40px 0;
+        width: 50%;
+    }
+
+    .photo__slider {
+        padding: 0 25px;
+    }
+
+    .slick-prev {
+        left: 25px;
+    }
+
+    .slick-next {
+        right: 25px;
+    }
+
+    .footer__items {
+        flex-wrap: wrap;
+    }
+
+    .footer__item {
+        width: 100%;
+        border-bottom: 1px solid #000;
+    }
+
+    .footer__item-title {
+        position: relative;
+        padding-right: 30px;
+        margin: 15px 0;
+        cursor: pointer;
+    }
+
+    .footer__item-title::before {
+        content: "+";
+        position: absolute;
+        right: 20px;
+        display: block;
+        transition: transform .5s;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        font-size: 20px;
+    }
+    .footer__item-title--active::before {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .footer__item-list {
+        display: none;
+    }
+
+    .footer__item-list li {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 800px) {
+    .footer__item-list {
+        display: block !important;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .menu__list {
+        display: block;
+        text-align: center;
+        margin: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: all 1s;
+        max-height: 1000px;
+    }
+
+    .menu__link {
+        display: block;
+        margin: 0;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .menu__list--active {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+    }
+
+    .reason {
+        padding-top: 20px;
+    }
+
+    .reason__text {
+        text-align: center;
+    }
+
+    .reason__link {
+        text-align: center;
+    }
+
+    .about__text {
+        text-align: center;
+    }
+
+    .about__row-info {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .car__dote {
+        display: none;
+    }
+
+    .photo {
+        padding: 40px 0;
+    }
+
+    .photo__text::before {
+        width: 100%;
+    }
+
+    .slick-arrows {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-top {
+        padding: 20px;
+    }
+
+    .about__row-inner {
+        text-align: center;
+    }
+
+    .car__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .photo__slider {
+        padding: 0;
+        filter: none;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .slick-dots button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .slick-active {
+        filter: drop-shadow(0 0 1px #000);
+    }
+}
+
+@media (max-width: 400px) {
+    .reason__statistics-item {
+        width: 100%;
+    }
+}
